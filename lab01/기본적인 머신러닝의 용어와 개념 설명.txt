@@ -28,3 +28,7 @@ pass/non-pass. 둘중하나
 시험성적(A,B,C,D,F) 
 
 
+Rank, Shapes, Types
+Rank : 몇차원이냐
+Shapes : 몇개의 element를 갖고있냐
+
