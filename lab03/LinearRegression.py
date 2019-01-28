@@ -11,6 +11,7 @@ W = tf.Variable(tf.random_normal([1]), name='weight') # becaues we don't know W,
 b = tf.Variable(tf.random_normal([1]), name='bias')
 
 
+
 hypothesis = X*W + b #linear regression
 cost = tf.reduce_mean(tf.square(hypothesis-Y)) # reduce_mean returns average
                                                     # square means double multiply
