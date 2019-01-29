@@ -71,3 +71,22 @@ w_{C1}x_1+w_{C2}x_2+w_{C3}x_3
 \end{bmatrix}=\begin{bmatrix}
 \bar{y_A}\\\bar{y_B}\\\bar{y_C}
 \end{bmatrix}$
+
+## SOFTMAX
+
+$$S(y_i) = {e^{y_i} \over \sum_{j} e^{y_j}} $$
+1. 0에서 1사이
+2. sum이 1이다
+   
+
+0.7  → 1.0\
+0.2  → 0.0\
+0.1  → 0.0\
+'one-hot' encoding으로
+
+## Cost function : Cross-entropy
+
+$$D(S,L) = -\sum_{i} L_i\log{({S_i})}\\
+S(y)=\bar y , L=y$$ 
+맞은 예측의 cost 값은 0 \
+틀린 예측의 cost 값은 무한대
