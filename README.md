@@ -1,7 +1,10 @@
 # TensorFlowExam
 
-±è¼ºÈÆ ±³¼ö´ÔÀÇ °­ÁÂ¸¦ µè°í ÀÛ¼ºÇÑ ¿¹Á¦ ¹× Á¤¸® ³ëÆ®ÀÔ´Ï´Ù.
-https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm&index=1
+ê¹€ì„±í›ˆ êµìˆ˜ë‹˜ì˜ ê°•ì¢Œë¥¼ ë“£ê³  ì‘ì„±í•œ ì˜ˆì œ ë° ì •ë¦¬ ë…¸íŠ¸ì…ë‹ˆë‹¤.\
+[ìœ íŠœë¸Œ ë§í¬] https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm&index=1
 
-¸¹Àº Data SetÀÌ ÀÖ´ä´Ï´Ù.
+ë§ì€ Data Setì´ ìˆëŠ” ê³³\
 https://www.kaggle.com
+
+ë§ˆí¬ë‹¤ìš´ ìˆ˜ì‹ ì‚¬ìš©í•˜ëŠ” ë²•\
+https://wikidocs.net/1679

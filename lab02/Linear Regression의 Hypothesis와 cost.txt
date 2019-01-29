@@ -1,8 +1,0 @@
-H(x) = Wx + b 
-
-어떤 hypothesis가 better?
-→ Cost function을 따르라
-
-cost = (1/m) * 시그마i는1부터m까지 ( H(x)-y )^2
-
-Goal: Minimize cost 
