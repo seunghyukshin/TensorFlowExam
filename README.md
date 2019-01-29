@@ -8,3 +8,6 @@ https://www.kaggle.com
 
 마크다운 수식 사용하는 법\
 https://wikidocs.net/1679
+
+위의 강좌를 듣고 정리한 다른 분의 글\
+https://jungwoon.github.io/tensorflow/toe/2017/12/19/MT-04-Tensor-Manipulation/
