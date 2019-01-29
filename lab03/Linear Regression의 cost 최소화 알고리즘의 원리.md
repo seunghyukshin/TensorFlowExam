@@ -1,10 +1,9 @@
 # Minmalize cost
-<table>
-<tr><th>x</th><th>y</th></tr>
-<tr><th>1</th><th>1</th></tr>
-<tr><th>2</th><th>2</th></tr>
-<tr><th>3</th><th>3</th></tr>
-</table> 
+x|y
+-|-
+1|1
+2|2
+3|3
 → cost/W 그래프 모양 : 아래로 볼록
 
 → Gradient descent algorithm : 시작점이 달라도 도착 지점은 한 곳\
