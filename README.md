@@ -1,4 +1,4 @@
-# TensorFlowExam
+﻿# Tensorflow 스터디 노트
 
 김성훈 교수님의 강좌를 듣고 작성한 예제 및 정리 노트입니다.\
 [유튜브 링크] https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm&index=1

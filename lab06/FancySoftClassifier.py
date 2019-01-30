@@ -50,3 +50,10 @@ with tf.Session() as sess:
     pred = sess.run(prediction, feed_dict={X: x_data})
     for p, y in zip(pred, y_data.flatten()):  # fl
         print("[{}] Prediction: {} True Y: {}".format(p == int(y), p, int(y)))
+
+'''
+one-hot-encoding 을 logit 이 아니라, hypothesis 로 해야 할 이유가 없지 않나요? 
+어차피 logit 중에 젤 큰 값이 hypothesis 에서도 제일 크게 나올 텐데요.  
+prediction 을 tf.argmax(logits, 1) 로 바꾸면, 프로그램에서 굳이 nn.softmax 를 한번 더 호출할 이유가 없는 것 같습니다. 
+(어차피 softmax_cross_entropy_with_logits 가 softmax ==>  cross_entropy 로 이어지는 과정이기에)﻿
+'''
