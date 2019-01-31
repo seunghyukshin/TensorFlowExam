@@ -1,5 +1,7 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
+import matplotlib.pyplot as plt
+import random
 
 mnist = input_data.read_data_sets("~/MINST_data", one_hot=True)
 
@@ -32,5 +34,17 @@ with tf.Session() as sess:
         for i in range(total_batch):
             batch_xs, batch_ys = mnist.train.next_batch(batch_size)
             c, _ = sess.run([cost, optimizer], feed_dict={X: batch_xs, Y: batch_ys})
-            avg_cost += c / total_batch
+            avg_cost += c / total_batch # 각 batch마다 가설을 세우고 cost를 구한 다음 모든 batch의 cost 평균
         print('Epoch:', '%04d' % (epoch + 1), 'cost = ', '{:.9f}'.format(avg_cost))
+
+    # Test
+    print("Accuracy: ", accuracy.eval(session=sess, feed_dict={X: mnist.test.images, Y: mnist.test.labels}))
+
+    ## Sample image show and prediction
+    r = random.randint(0, mnist.test.num_examples - 1)
+    print("Label: ", sess.run(tf.argmax(mnist.test.labels[r:r + 1], 1)))
+    print("Prediction: ", sess.run(tf.argmax(hypothesis, 1),
+                                   feed_dict={X: mnist.test.images[r:r + 1]}))
+
+    plt.imshow(mnist.test.images[r:r + 1].reshape(28, 28), cmap='Greys', interpolation='nearest')   # 인덱스 r의 값을 리스트형태로 extract
+    plt.show()
