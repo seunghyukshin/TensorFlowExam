@@ -33,5 +33,6 @@ for step in range(2001):
         print(step, "Cost: ", cost_val, "\nPrediction:\n", hy_val)
 
 # Ask my score
+print("Your score will be ", sess.run(hypothesis, feed_dict={X: [[73,80,75]]}))
 print("Your score will be ", sess.run(hypothesis, feed_dict={X: [[100,70,101]]}))
 print("Other score will be \n", sess.run(hypothesis, feed_dict={X: [[60,70,110],[90,100,80]]}))
