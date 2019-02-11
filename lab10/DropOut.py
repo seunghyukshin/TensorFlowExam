@@ -17,7 +17,6 @@ keep_prob = tf.placeholder(tf.float32)
 
 X = tf.placeholder(tf.float32, [None, 784])  # 784 = 28 * 28
 Y = tf.placeholder(tf.float32, [None, nb_classes])  # 10: 0~9
-# lab07에서 이부분만 바뀜
 W1 = tf.get_variable("W1", shape=[784, 512],
                      initializer=tf.contrib.layers.xavier_initializer())  # xavier로 초기화:초기값을 작게 잡아줌(성능 업)
 b1 = tf.Variable(tf.random_normal([512]))
@@ -85,7 +84,7 @@ with tf.Session() as sess:
     r = random.randint(0, mnist.test.num_examples - 1)
     print("Label: ", sess.run(tf.argmax(mnist.test.labels[r:r + 1], 1)))
     print("Prediction: ", sess.run(tf.argmax(hypothesis, 1),
-                                   feed_dict={X: mnist.test.images[r:r + 1]}))
+                                   feed_dict={X: mnist.test.images[r:r + 1], keep_prob: 1}))
 
     plt.imshow(mnist.test.images[r:r + 1].reshape(28, 28), cmap='Greys',
                interpolation='nearest')  # 인덱스 r의 값을 리스트형태로 extract
